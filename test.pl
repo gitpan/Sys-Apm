@@ -2,7 +2,7 @@
 
 use Sys::Apm;
 
-my $a = Sys::Apm->new or warn "no apm support in kernel\n";
+my $a = Sys::Apm->new or (print("no apm support in kernel\n"),exit 0);
 
 printf("bios: %s, driver: %s, ac_status: %d, charge: %s, remaining: %s %s\n",
         $a->bios_version,

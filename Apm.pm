@@ -3,7 +3,7 @@ package Sys::Apm;
 use strict;
 use warnings;
 
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 sub new {
     my $cls = shift;
